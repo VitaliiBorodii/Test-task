@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Test example</title>
+     <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css" />
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+<div id="slider">
+    <p>"Потолок" по скорости:</p>
+    <input class="bar" type="range" min="0" max="70" id="velocity"/>
+    <output id="rangevalue1"></output>
+    <p>Шаг по скорости:</p>
+    <input class="bar" type="range" min="0" max="30" id="velocityStep"/>
+    <output id="rangevalue2"></output>
+    <p>Видимые ребра: <output id="currentValue"></output></p>
+    <div id="loader"></div>
+</div>
+    <div id="map">
+    </div>
+</body>
+<script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
+<script src="main.js"></script>
+<script src="http://labs.easyblog.it/maps/leaflet-panel-layers/dist/leaflet-panel-layers.min.js"></script>
+</html>
